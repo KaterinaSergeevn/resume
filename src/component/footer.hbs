@@ -1,0 +1,17 @@
+<footer>
+    <div>
+        {{#with social}}
+        {{> link text=email.text href=email.href blank=true }}
+        {{> link text=phone.text href=phone.href blank=true }}
+        {{> link text=linkedIn.text href=linkedIn.href blank=true noLine=true }}
+        {{/with}}
+    </div>
+    <br>
+    <div>
+        <em>© Copyright {{firstname}} {{lastname}}, 2023</em>
+    </div>
+    <br>
+    <div>
+        <address>{{address}}</address>
+    </div>
+</footer>
